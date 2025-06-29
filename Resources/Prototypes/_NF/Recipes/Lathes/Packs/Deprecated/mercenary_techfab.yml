@@ -108,6 +108,7 @@
   - NFSpeedLoaderPistol45Empty
   - NFMagazineClipRifle20Empty
   - MagazineLightRifleLowCapacityEmpty
+<<<<<<< HEAD
   - NFMagazineRifle30Empty
   - NFMagazinePistol35
   - NFSpeedLoaderPistol35
@@ -204,3 +205,5 @@
   - NFSpeedLoaderPistol45
   - NFMagazineClipRifle20
   - NFMagazineRifle30
+=======
+>>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
