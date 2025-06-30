@@ -93,7 +93,6 @@
 # note: depends on Engineering cluster
 
 - type: technology
-<<<<<<< HEAD
   id: NFAdvancedBeltTechnology
   name: nf-research-technology-advanced-belt
   entityIcon: ClothingBeltChiefEngineer
@@ -107,8 +106,6 @@
   position: 4, 4
 
 - type: technology
-=======
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   id: NFMechanicalCompression
   name: nf-research-technology-mechanical-compression
   entityIcon: MachineFlatpacker
@@ -148,11 +145,7 @@
   - NFPouchCaptain
   - NFPouchCargo
   technologyPrerequisites:
-<<<<<<< HEAD
   - NFAdvancedBeltTechnology
-=======
-  - NFMechanicalCompression
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   position: 5, 4
 
 - type: technology
@@ -189,11 +182,7 @@
 - type: technology
   id: NFMatterEnergyConversion
   name: nf-research-technology-matter-energy-conversion
-<<<<<<< HEAD
   entityIcon: BorgModuleRCD
-=======
-  entityIcon: RCDRecharging
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   discipline: NFEngineering
   tier: 1
   cost: 15000
@@ -338,24 +327,14 @@
   position: 4, 6
 
 - type: technology
-<<<<<<< HEAD
   id: NFAdvancedCyborgToolsTechnology
   name: nf-research-technology-advanced-cyborg-tools
   entityIcon: BorgModuleAdvancedTool
-=======
-  id: NFAdvancedBeltTechnology
-  name: nf-research-technology-advanced-belt
-  entityIcon: ClothingBeltChiefEngineer
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   discipline: NFEngineering
   tier: 1
   cost: 2500
   recipeUnlocks:
-<<<<<<< HEAD
   - BorgModuleAdvancedTool
-=======
-  - ClothingBeltChiefEngineer
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   technologyPrerequisites:
   - NFAdvancedToolsTechnology
   position: 5, 6
@@ -697,22 +676,13 @@
 - type: technology
   id: NFMechanizedTreatment
   name: nf-research-technology-mechanized-treatment
-<<<<<<< HEAD
   entityIcon: BorgModuleAdvancedParamedic
-=======
-  entityIcon: BorgChassisMedical
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   discipline: NFMedical
   tier: 1
   cost: 5000
   recipeUnlocks:
-<<<<<<< HEAD
   - BorgModuleAdvancedParamedic
   - BorgModuleAdvancedChemical
-=======
-  - BorgModuleAdvancedChemical
-  - BorgModuleAdvancedParamedic
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   technologyPrerequisites:
   - NFEngineeringMedicine
   position: 4, 13
@@ -1109,21 +1079,13 @@
   entityIcon: AdvMopItem
   discipline: NFService
   tier: 1
-<<<<<<< HEAD
   cost: 7500
   recipeUnlocks:
   - AdvMopItem
-=======
-  cost: 10000
-  recipeUnlocks:
-  - AdvMopItem
-  - BorgModuleAdvancedCleaning
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   technologyPrerequisites:
   - NFAdvancedSpray
   position: 3, 23
 
-<<<<<<< HEAD
 - type: technology
   id: NFAdvancedCleaningCyborg
   name: nf-research-technology-advanced-cleaning-cyborg
@@ -1137,8 +1099,6 @@
   - NFAdvancedCleaning
   position: 4, 23
 
-=======
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
 # region Kitchen
 
 - type: technology
@@ -1374,11 +1334,7 @@
 - type: technology
   id: NFFission
   name: nf-research-technology-fission-powercells
-<<<<<<< HEAD
   entityIcon: PowerCellMicroreactor
-=======
-  entityIcon: Emitter
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   discipline: NFEngineering
   tier: 1
   cost: 7500
@@ -1391,11 +1347,7 @@
 - type: technology
   id: NFPortableFission
   name: nf-research-technology-portable-fission
-<<<<<<< HEAD
   entityIcon: PortableRecharger
-=======
-  entityIcon: PowerCellMicroreactor
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
   discipline: NFEngineering
   tier: 1
   cost: 10000
@@ -1642,7 +1594,6 @@
   - NFAdvancedSalvageWeapons
   position: 4, 36
 
-<<<<<<< HEAD
 - type: technology
   id: NFAdvancedSalvageCyborg
   name: nf-research-technology-advanced-salvage-cyborg
@@ -1656,8 +1607,6 @@
   - NFBluespaceOreStorage
   position: 5, 35
 
-=======
->>>>>>> 242eab4d5c (Port tech tree (Goob#2321) (#3535))
 # region Munitions
 
 - type: technology
