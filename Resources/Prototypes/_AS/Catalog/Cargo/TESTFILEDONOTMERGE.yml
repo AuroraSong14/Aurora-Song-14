@@ -1,0 +1,17 @@
+﻿- type: entity
+  parent: CrateBaseWeldable
+  id: TESTOBJECTDONOTMERGE
+  name: Grumbus
+  description: Feels incredibly flimsy.
+  components:
+  - type: Icon
+    sprite: _NF/Structures/Storage/Crates/biodegradable.rsi
+  - type: Sprite
+    sprite: _NF/Structures/Storage/Crates/biodegradable.rsi
+  - type: Construction
+    graph: CratePlasticBiodegradable
+    node: crateplasticbiodegradable
+    containers:
+    - entity_storage
+  - type: StaticPrice
+    price: 15 # 12 spesos at 0.75x, proportional to the plastic crate if deconstructable for 1 sheet
