@@ -1,0 +1,6 @@
+﻿- type: latheRecipePack
+  id: SexAS
+  recipes:
+    - ClothingNeckShockCollar
+    - LeashBasic
+    - ClothingNeckCollarCmd

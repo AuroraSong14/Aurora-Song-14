@@ -16,3 +16,4 @@
     Goblin: 2 # Frontier
 #    Sheleg: 2 # Frontier: TODO add a overwrite for suit in case there isnt one
     Harpy: 1 # Frontier
+    Feroxi: 3 # DeltaV - Feroxi, see Prototypes/_DV/Entities/Mobs/Species/feroxi.yml

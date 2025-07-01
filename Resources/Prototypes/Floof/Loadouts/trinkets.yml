@@ -1,0 +1,9 @@
+- type: loadout
+  id: LeashBasic
+  price: 1000
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  storage:
+    back:
+    - LeashBasic

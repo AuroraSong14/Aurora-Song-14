@@ -74,6 +74,7 @@
   - type: Tag
     tags:
     - Meat
+    - ReptilianFood # DeltaV - Allows feroxi (shark people) to eat it
 
 - type: entity
   name: soy sustenance bar

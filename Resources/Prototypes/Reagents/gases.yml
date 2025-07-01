@@ -26,6 +26,10 @@
         conditions:
         - !type:OrganType
           type: Plant
+      - !type:Oxygenate # DeltaV - Feroxi Still need to breathe
+        conditions:
+        - !type:OrganType
+          type: Feroxi
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:
@@ -72,6 +76,10 @@
         conditions:
         - !type:OrganType
           type: Plant
+      - !type:Oxygenate # DeltaV - Feroxi Still need to breathe
+        conditions:
+        - !type:OrganType
+          type: Feroxi
       # Convert Oxygen into CO2.
       - !type:ModifyLungGas
         conditions:

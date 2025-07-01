@@ -149,6 +149,44 @@
       weight: 2
     - id: ClothingHandsKnuckleDustersSyndicate
 
+
+- type: entityTable # Floof - Start
+  id: LewdMaintLoot
+  table: !type:GroupSelector
+    children:
+    - id: LewdWand
+    - id: LewdVibeGreen
+    - id: LewdVibeTeal
+    - id: LewdVibePink
+    - id: LewdVibeRed
+    - id: LewdVibeYellow
+    - id: LewdFleshlightGreen
+    - id: LewdFleshlightTeal
+    - id: LewdFleshlightPink
+    - id: LewdFleshlightRed
+    - id: LewdFleshlightYellow
+    - id: AvianDildo
+    - id: CanineDildo
+    - id: CanineDildoRed
+    - id: HorseDildo
+    - id: DragonDildo
+    - id: NormalDildo
+    - id: TentacleDildo
+    - id: DoubleDildo
+    - id: WhipPink
+      weight: 0.5
+    - id: WhipTeal
+      weight: 0.5
+    - id: WhipPinkCrotch
+      weight: 0.5
+    - id: WhipTealCrotch
+      weight: 0.5
+    - id: SpankPinkPaddle
+      weight: 0.5
+    - id: SpankTealPaddle
+      weight: 0.5
+    # Floof - End
+
 - type: entityTable
   id: MaintenanceLockerLoot
   table: !type:AllSelector
@@ -183,6 +221,12 @@
     # Recursive
 #    - id: ClosetMaintenanceFilledRandom # Frontier: don't trust this
 #      prob: 0.01 # Frontier: don't trust this
+    # Lewd - Floof
+    - !type:NestedSelector
+      tableId: LewdMaintLoot
+      prob: 0.15
+      rolls: !type:RangeNumberSelector
+        range: 1, 2
 
 - type: entity
   id: ClosetMaintenanceFilledRandom

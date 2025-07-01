@@ -86,6 +86,7 @@
       interactFailureSound:
         path: /Audio/Effects/bite.ogg
     - type: Carriable # DeltaV
+    - type: LeashAnchor # Floofstation - sometimes you gotta walk that fish
 
 - type: entity
   parent: BaseMobCarp
@@ -185,6 +186,9 @@
     - type: HTN
       rootTask:
         task: DragonCarpCompound
+    - type: LeashAnchor # Floofstation - we can't exactly remove this component coming from the parent, so we disable it
+      enabled: false
+
 
 - type: entity
   id: MobCarpDungeon
@@ -203,6 +207,8 @@
     damage:
       types:
         Slash: 6
+  - type: LeashAnchor # Floofstation - we can't exactly remove this component coming from the parent, so we disable it
+    enabled: false
 
 - type: entity
   name: sharkminnow
