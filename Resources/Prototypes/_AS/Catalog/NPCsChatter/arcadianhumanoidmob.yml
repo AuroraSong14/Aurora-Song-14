@@ -1,0 +1,5 @@
+﻿- type: localizedDataset
+  id: arcadiahumanoidchatter
+  values:
+    prefix: advertisement-arcadiahumanoid-
+    count: 20

@@ -1,0 +1,17 @@
+﻿- type: localizedDataset
+  id: NamesArcadiaPrefix
+  values:
+    prefix: names-arcadia-prefix-dataset-
+    count: 3
+
+- type: localizedDataset
+  id: NamesArcadiaNormal
+  values:
+    prefix: names-syndicate-normal-dataset-
+    count: 25
+
+- type: localizedDataset
+  id: NamesArcadiaElite
+  values:
+    prefix: names-syndicate-elite-dataset-
+    count: 5

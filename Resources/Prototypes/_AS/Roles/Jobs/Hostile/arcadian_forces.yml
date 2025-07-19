@@ -1,0 +1,12 @@
+﻿- type: startingGear
+  id: UIVArcadianAgentGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryArcadiaTac
+    shoes: ClothingShoesBootsJack
+    gloves: ClothingHandsGlovesArcadiaCombat
+    neck: ClothingNeckIFFOrange
+    mask: ClothingMaskArcadia
+    belt: ClothingBeltArcadia
+  inhand:
+    - CombatKnife
+
