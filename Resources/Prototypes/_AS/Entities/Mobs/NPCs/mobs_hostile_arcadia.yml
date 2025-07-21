@@ -46,6 +46,8 @@
   suffix: (UIV)
   parent: [MobArcadianAgentBase]
   id: MobArcadianAgentUIV
+  description: |-
+    A naval agent with a lot to prove, and more to gain.
   components:
   - type: RandomMetadata
     nameSegments:
@@ -80,7 +82,7 @@
   parent: [MobArcadianAgentBase]
   id: MobArcadianObserverUIV
   description: |-
-    More trusted than an agent, with pretty much no increased priveleges. Mad about it. Oh and that's an SMG.
+    Obnoxiously educated, but not necessarily smart. This one has an SMG, careful.
   components:
   - type: RandomMetadata
     nameSegments:
