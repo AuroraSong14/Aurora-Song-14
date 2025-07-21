@@ -1,0 +1,28 @@
+﻿- type: entity
+  name: Arcadian Naval Agent Spawner
+  id: SpawnMobArcadianAgentUIV
+  parent: MarkerBase
+  suffix: AI, Hostile, RND
+  components:
+  - type: Sprite
+    layers:
+      - state: red
+      - state: ai
+      - sprite: _NF/Mobs/Species/Templates/human.rsi
+        state: human
+      - sprite: _NF/Clothing/Mask/arcadia.rsi
+        state: equipped-MASK
+      - sprite: _NF/Clothing/Uniforms/Jumpsuit/military.rsi
+        state: equipped-INNERCLOTHING
+        layers:
+        - state: icon-base-bottom
+          color: "#ffffff"
+        - state: icon-base-top-jumpsuit
+          color: "#ffffff"
+        - state: icon-decor-contractor-tac
+          color: "#c12d30"
+      - sprite: Clothing/Shoes/Boots/jackboots.rsi
+        state: equipped-FEET
+  - type: RandomSpawner
+    prototypes:
+      - MobArcadianAgentUIV

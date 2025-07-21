@@ -7,11 +7,11 @@
 - type: localizedDataset
   id: NamesArcadiaNormal
   values:
-    prefix: names-syndicate-normal-dataset-
+    prefix: names-arcadia-normal-dataset-
     count: 25
 
 - type: localizedDataset
   id: NamesArcadiaElite
   values:
-    prefix: names-syndicate-elite-dataset-
+    prefix: names-arcadia-elite-dataset-
     count: 5

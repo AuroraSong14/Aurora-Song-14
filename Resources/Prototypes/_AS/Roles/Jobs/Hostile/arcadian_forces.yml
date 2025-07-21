@@ -10,3 +10,14 @@
   inhand:
     - CombatKnife
 
+- type: startingGear
+  id: UIVArcadianObserverGear
+  equipment:
+      jumpsuit: ClothingUniformJumpsuitMilitaryArcadiaTac
+      shoes: ClothingShoesBootsJack
+      gloves: ClothingHandsGlovesColorBlackSMG
+      neck: ClothingNeckIFFOrange
+      mask: ClothingMaskArcadia
+      belt: ClothingBeltArcadia
+  inhand:
+    - CombatKnife
