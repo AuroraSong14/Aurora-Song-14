@@ -36,6 +36,15 @@
   components:
   - type: Pda
     id: MercenaryIDCard
+    licenseSlot:
+      name: license
+      startingItem: LicenseContraband
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      priority: -2
+      whitelist:
+        tags:
+        - License
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType:

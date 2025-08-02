@@ -1,0 +1,25 @@
+- type: entity
+  parent: Clothing
+  id: LicenseContraband
+  name: contraband handling license
+  description: This license grants the named holder the legal allowance for the usage of C2-class contraband, the tackling of Bluespace threats, and the transportation of C3-class contraband for turn-in to the authorities.
+  components:
+  - type: Sprite
+    sprite: _AS/Objects/Specific/License/contraband_handling_license.rsi
+    state: icon
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _AS/Objects/Specific/License/contraband_handling_license.rsi
+  - type: Item
+    size: Small
+    storedRotation: -90
+  - type: License
+    licenseName: contraband handling license
+  - type: Tag
+    tags:
+    - License
+  - type: CargoSellBlacklist
+  - type: ShipyardSellCondition
+    preserveOnSale: true
+  - type: DeletionCensusExempt

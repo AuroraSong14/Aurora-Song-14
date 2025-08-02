@@ -28,7 +28,7 @@
     state: pda
   - type: Pda
     paiSlot:
-      priority: -3 # Frontier: -2<-3
+      priority: -4
       whitelist:
         components:
         - PAI
@@ -41,12 +41,23 @@
     # Frontier: space law slot
     bookSlot:
       startingItem: NFHyperlinkBookSpaceLaw
-      priority: -2
+      priority: -3
       whitelist:
         tags:
         - BookSpaceLaw
         - BookNfsdSop
     # End Frontier: space law slot
+    # Aurora - License slots
+    licenseSlot:
+      name: license
+      startingItem:
+      ejectSound: /Audio/Machines/id_swipe.ogg
+      insertSound: /Audio/Machines/id_insert.ogg
+      priority: -2
+      whitelist:
+        tags:
+        - License
+    # End Aurora
     idSlot:
       name: access-id-card-component-default
       ejectSound: /Audio/Machines/id_swipe.ogg
@@ -63,6 +74,7 @@
       PDA-pen: !type:ContainerSlot {}
       PDA-pai: !type:ContainerSlot {}
       PDA-book: !type:ContainerSlot {} # Frontier
+      PDA-license: !type:ContainerSlot {} # Aurora
       Cartridge-Slot: !type:ContainerSlot {}
       program-container: !type:Container
   - type: ItemSlots

@@ -27,3 +27,7 @@
 #region uplinks - Aurora
 - type: Tag
   id: MercenaryUplink
+
+#region licenses
+- type: Tag
+  id: License
