@@ -15,6 +15,7 @@ name-format-nukie-generic = {$part0} {$part1}
 name-format-nukie-agent = Agent {$part0}
 name-format-nukie-commander = Commander {$part0}
 name-format-nukie-operator = Operator {$part0}
+name-format-arcadia-elite = {$part0} {$part1} {$part2}
 # "<title> <name>"
 name-format-ert = {$part0} {$part1}
 

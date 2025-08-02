@@ -1,0 +1,114 @@
+﻿- type: entity
+  name: Arcadian Agent
+  abstract: true
+  categories: [HideSpawnMenu]
+  parent:
+  - MobHumanoidHostileBase
+  - MobHumanoidInvetory
+  - MobHumanoidHostileAISimpleRanged
+  - NFMobRestrictions
+  id: MobArcadianAgentBase
+  components:
+  - type: Body
+    prototype: HumanSyntheticOrgans
+    requiredLegs: 2
+  - type: NpcFactionMember
+    factions: [NFSyndicate]
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: RandomMetadata
+    nameSegments:
+    - NamesArcadiaPrefix
+    - NamesArcadiaNormal
+    - NamesArcadiaElite
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: Advertise
+    pack: arcadiahumanoidchatter
+    minimumWait: 30
+    maximumWait: 120
+    nextAdvertisementTime: 10
+  - type: AutoWakeUp
+  - type: TriggerOnBeingGibbed
+  - type: GibOnTrigger
+    deleteItems: true
+    deleteOrgans: true
+    gib: false
+    useArgumentEntity: true
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4.5
+    baseSprintSpeed: 4.5
+
+- type: entity
+  name: Arcadian Naval Agent
+  suffix: (UIV)
+  parent: [MobArcadianAgentBase]
+  id: MobArcadianAgentUIV
+  description: |-
+    A naval agent with a lot to prove, and more to gain.
+  components:
+  - type: RandomMetadata
+    nameSegments:
+    - NamesArcadiaPrefix
+    - NamesArcadiaNormal
+    nameFormat: name-format-nukie-generic
+  - type: Loadout
+    prototypes:
+      - UIVArcadianAgentGear
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 4
+    baseSprintSpeed: 6
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.75
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgePistol45Overpressure
+    capacity: 1
+    count: 1
+  - type: Gun
+    showExamineText: false
+    fireRate: 0.75
+    SelectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    SoundGunshot: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+
+- type: entity
+  name: Arcadian Naval Observer
+  suffix: (UIV)
+  parent: [MobArcadianAgentBase]
+  id: MobArcadianObserverUIV
+  description: |-
+    Obnoxiously educated, but not necessarily smart. This one has an SMG, careful.
+  components:
+  - type: RandomMetadata
+    nameSegments:
+    - NamesArcadiaPrefix
+    - NamesArcadiaNormal
+    - NamesArcadiaElite
+    nameFormat: name-format-arcadia-elite
+  - type: Loadout
+    prototypes:
+    - UIVArcadianObserverGear
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 1
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgePistol35
+    capacity: 7
+    count: 7
+  - type: Gun
+    showExamineText: false
+    fireRate: 5
+    minAngle: 10
+    maxAngle: 30
+    angleIncrease: 3
+    angleDecay: 6
+    SelectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    SoundGunshot: /Audio/Weapons/Guns/Gunshots/smg.ogg

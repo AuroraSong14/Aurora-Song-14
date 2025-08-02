@@ -1,0 +1,119 @@
+﻿# Bag definitions for loot bundles
+- type: entity
+  parent: BaseItem
+  id: ArcadiaBackpackGiftBox
+  name: Arcadian Agent Bundle
+  description: LOOT! LOOT! LOOT!
+  abstract: true
+  categories: [HideSpawnMenu]
+  suffix: NPC Loot
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Back/Backpacks/arcadia.rsi
+  - type: Item
+    size: Normal
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+  - type: SpawnItemsOnUse
+    items:
+    - id: SpaceCash10
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ArcadiaBackpackGiftBox
+  id: ArcadiaMessengerGiftBox
+  name: Arcadian Agent Bundle
+  description: LOOT! LOOT! LOOT!
+  abstract: true
+  categories: [HideSpawnMenu]
+  suffix: NPC Loot
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Back/Messenger/color.rsi
+    layers:
+    - state: icon-base
+      color: "#bab0b0"
+    - state: icon-base-top
+      color: "#ffffff"
+    - state: icon-decor
+      color: "#c12d30"
+    - state: icon-sling
+      color: "#7d282c"
+    - state: icon-clasp
+      color: "#1f1f1f"
+  - type: Clothing
+    sprite: _NF/Clothing/Back/Messenger/color.rsi
+    clothingVisuals:
+      back:
+      - state: base-equipped-BACKPACK
+        color: "#bab0b0"
+      - state: base-top-equipped-BACKPACK
+        color: "#ffffff"
+      - state: decor-equipped-BACKPACK
+        color: "#c12d30"
+      - state: sling-equipped-BACKPACK
+        color: "#7d282c"
+      - state: clasp-equipped-BACKPACK
+        color: "#1f1f1f"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-inhand-left
+        color: "#bab0b0"
+      - state: base-top-inhand-left
+        color: "#ffffff"
+      - state: decor-inhand-left
+        color: "#c12d30"
+      - state: clasp-inhand-left
+        color: "#1f1f1f"
+      right:
+      - state: base-inhand-right
+        color: "#bab0b0"
+      - state: base-top-inhand-right
+        color: "#ffffff"
+      - state: decor-inhand-right
+        color: "#c12d30"
+      - state: clasp-inhand-right
+        color: "#1f1f1f"
+
+- type: entity
+  parent: ArcadiaBackpackGiftBox
+  id: ArcadiaDuffelGiftBox
+  name: Arcadian Agent Bundle
+  description: LOOT! LOOT! LOOT!
+  abstract: true
+  categories: [HideSpawnMenu]
+  suffix: NPC Loot
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Back/Duffels/arcadia.rsi
+    state: icon
+  - type: Clothing
+    sprite: _NF/Clothing/Back/Duffels/arcadia.rsi
+
+#ARCADIAN NPC LOOT
+##Agent loot
+- type: entity
+  parent: ArcadiaDuffelGiftBox
+  id: ArcadiaDuffelGiftBoxA
+  name: Arcadian Agent Bundle
+  description: LOOT! LOOT! LOOT!
+  suffix: NPC Loot
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: NFWeaponPistolN1984Expedition
+    - id: NFMagazinePistol45
+    - id: NFMagazinePistol45
+    - id: SpaceCash5000
+    - id: MercCoin1
+    #bonus loot
+    - id: SpaceCash2500
+      prob: 0.9
+    - id: SpawnDungeonLootMaterialsBasicFull
+      prob: 0.7
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg

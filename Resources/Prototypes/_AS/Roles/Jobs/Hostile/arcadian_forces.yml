@@ -1,0 +1,24 @@
+﻿- type: startingGear
+  id: UIVArcadianAgentGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryArcadiaTac
+    shoes: ClothingShoesBootsJack
+    gloves: ClothingHandsGlovesArcadiaCombat
+    neck: ClothingNeckIFFOrange
+    mask: ClothingMaskArcadia
+    belt: ClothingBeltArcadia
+    back: ArcadiaDuffelGiftBoxA
+  inhand:
+    - CombatKnife
+
+- type: startingGear
+  id: UIVArcadianObserverGear
+  equipment:
+      jumpsuit: ClothingUniformJumpsuitMilitaryArcadiaTac
+      shoes: ClothingShoesBootsJack
+      gloves: ClothingHandsGlovesColorBlackPistol
+      neck: ClothingNeckIFFOrange
+      mask: ClothingMaskArcadia
+      belt: ClothingBeltArcadia
+  inhand:
+    - CombatKnife
